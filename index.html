@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="top">
+        <h1>calc</h1>
+        <div class="theme_toggle">
+          <p>THEME</p>
+          <div class="toggle_number">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="toggle">
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen">0</div>
+
+      <div class="calc_buttons">
+        <div class="calc_button">
+          <p class="one_calc_button">7</p>
+          <p class="one_calc_button">8</p>
+          <p class="one_calc_button">9</p>
+          <p class="one_calc_button special" data-action="delete">del</p>
+        </div>
+        <div class="calc_button">
+          <p class="one_calc_button">4</p>
+          <p class="one_calc_button">5</p>
+          <p class="one_calc_button">6</p>
+          <p class="one_calc_button" data-action="add">+</p>
+        </div>
+        <div class="calc_button">
+          <p class="one_calc_button">1</p>
+          <p class="one_calc_button">2</p>
+          <p class="one_calc_button">3</p>
+          <p class="one_calc_button" data-action="subtract">-</p>
+        </div>
+        <div class="calc_button">
+          <p class="one_calc_button" data-action="decimal">.</p>
+          <p class="one_calc_button">0</p>
+          <p class="one_calc_button" data-action="divide">/</p>
+          <p class="one_calc_button" data-action="multiply">×</p>
+        </div>
+        <div class="calc_button">
+          <p class="one_calc_button reset" data-action="clear">reset</p>
+          <p class="one_calc_button equal" data-action="calculate">=</p>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
